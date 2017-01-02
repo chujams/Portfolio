@@ -1,5 +1,11 @@
 .banner-content {
-   background: url('http://placehold.it/1920x50') no-repeat center center;
+   background: url('http://lorempixel.com/1920/350/') no-repeat center center;
    background-size: cover;
    text-align: center;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  margin-top: 2%;
 }
