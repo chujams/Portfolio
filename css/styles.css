@@ -37,18 +37,35 @@ html {
   height: 100%;
   min-height: 640px;
   padding-top: 150px;
+  background: #515151;
 }
 
 .portfolio-section {
   height: 100%;
   min-height: 640px;
   padding-top: 150px;
-  background: grey;
+  background: #EEEEEE;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow-y: scroll;
 }
 
 .contact-section {
   height: 100%;
   min-height: 640px;
   padding-top: 150px;
-  background: white;
+  background: #00B4FF;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color:#FFFF00;
+  height: 1px;
+}
+
+h1 {
+  margin-left: 5%;
 }
