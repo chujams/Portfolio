@@ -66,6 +66,13 @@ hr {
   height: 1px;
 }
 
-h1 {
-  margin-left: 5%;
+
+
+#sameline {
+  display: inline;
+  text-align:   justify;
+}
+
+.tab-content {
+  text-align: center;
 }
