@@ -14,6 +14,7 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        font-family: Lato;
     }
 
     .top-nav-collapse {
@@ -33,28 +34,47 @@ html {
   margin-top: 8%;
 }
 
+#sameline {
+  display: inline;
+  text-align:   justify;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #a6e6fc;
+}
+
+
+#sameline:hover{
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+
+}
+
 .about-section {
   height: 100%;
   min-height: 640px;
-  padding-top: 150px;
-  background: #515151;
+  padding-top: 5%;
+  background: #BED2D9;
+}
+
+.about-box {
+  background: #F7F9FE;
+  padding: 5%
 }
 
 .portfolio-section {
   height: 100%;
   min-height: 640px;
-  padding-top: 150px;
-  background: #EEEEEE;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 5%;
+  background: #F7F9FE;
   overflow-y: scroll;
 }
 
 .contact-section {
   height: 100%;
   min-height: 640px;
-  padding-top: 150px;
-  background: #00B4FF;
+  padding-top: 5%;
+  background: #BED2D9;
 }
 
 hr {
@@ -66,13 +86,51 @@ hr {
   height: 1px;
 }
 
-
-
-#sameline {
-  display: inline;
-  text-align:   justify;
-}
-
 .tab-content {
   text-align: center;
+}
+
+.nav-tabs > li > a {
+  color: black;
+  text-align: center;
+  background-color: #DCE8EB;
+
+}
+
+
+.tab-content{
+    padding:5px;
+    background-color: #BED2D9;
+
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #BED2D9 !important;
+    border-bottom: none;
+
+    color:#fff;
+}
+
+.active a {
+  background-color: #BED2D9 !important;
+}
+
+
+
+h1{
+  font-family: Oswald;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 1%;
+}
+
+h3 {
+  font-family: Oswald;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Lato;
+  line-height: 30px;
 }
