@@ -51,8 +51,8 @@ html {
 }
 
 .about-section {
-  height: 100%;
-  min-height: 640px;
+
+  min-height: 100%;
   padding-top: 5%;
   background: #BED2D9;
 }
@@ -63,11 +63,12 @@ html {
 }
 
 .portfolio-section {
-  height: 100%;
-  min-height: 640px;
+
+  min-height: 100%;
   padding-top: 5%;
   background: #F7F9FE;
-  overflow-y: scroll;
+  /*overflow-y: scroll; */
+  padding-bottom: 5%;
 }
 
 .contact-section {
@@ -133,4 +134,25 @@ h3 {
 p {
   font-family: Lato;
   line-height: 30px;
+}
+
+.desc {
+  border: 1px solid white;
+  padding: 3%;
+
+}
+
+.thumbnail {
+
+}
+
+.pblock{
+  border: 1px solid white;
+  padding-top: 2%;
+
+  margin-left: 2%;
+}
+
+.dblock{
+  padding-top: 2%;
 }
