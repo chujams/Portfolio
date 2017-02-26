@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 100%!important;
     height: 100%;
 }
 
@@ -54,11 +54,11 @@ html {
 
   min-height: 100%;
   padding-top: 5%;
-  background: #BED2D9;
+  background: #F7F9FE;
 }
 
 .about-box {
-  background: #F7F9FE;
+  background: #BED2D9;
   padding: 5%
 }
 
@@ -66,7 +66,7 @@ html {
 
   min-height: 100%;
   padding-top: 5%;
-  background: #F7F9FE;
+  background: #BED2D9;
   /*overflow-y: scroll; */
   padding-bottom: 5%;
 }
@@ -75,7 +75,7 @@ html {
   height: 100%;
   min-height: 640px;
   padding-top: 5%;
-  background: #BED2D9;
+  background: #F7F9FE;
 }
 
 hr {
@@ -83,8 +83,8 @@ hr {
   clear:both;
   display:block;
   width: 96%;
-  background-color:white;
-  height: 0.5px;
+  background-color:#BED2D9;
+  height: 1.5px;
 }
 
 .tab-content {
@@ -101,20 +101,20 @@ hr {
 
 .tab-content{
     padding:5px;
-    background-color: #BED2D9;
+    background-color: #F7F9FE;
 
 }
 
 .nav-tabs > li > a:hover{
-  background-color: #BED2D9 !important;
+  background-color: #F7F9FE !important;
     border-bottom: none;
 
-    color:#fff;
+    color:black;
 }
 
 .active a {
-  background-color: #BED2D9 !important;
-  color: #fff !important;
+  background-color: #F7F9FE !important;
+  color: black !important;
 
 }
 
@@ -145,13 +145,20 @@ p {
   line-height: 30px;
 }
 
+.git-link{
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 10;
+}
+
+
 .desc {
   border-radius: 4px;
   padding: 3%;
   padding-top: 1%;
-  overflow-y: auto;
+
   max-height: 170px;
-  border-left: 1px white solid;
+  border-left: 2px #BED2D9 solid;
 
 
 }
@@ -174,6 +181,34 @@ p {
   padding-top: 2%;
 }
 
-.col-md-4 {
 
+.caption {
+ margin: 0 auto;
+ margin-top: -40%;
+ text-align:center;
+ color: transparent;
+ font-family: Lato;
+
+}
+
+.mouseover:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s all;
+  cursor: pointer;
+  color:white;
+}
+
+
+.mouseover:hover .caption{
+  color:white;
+  transition: 1s all;
+
+}
+.modal-open {
+    overflow: visible;
+}
+.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    padding-right:0px!important;
 }
