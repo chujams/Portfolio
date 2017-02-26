@@ -1,6 +1,7 @@
 body {
     width: 100%!important;
     height: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 }
 
 .banner-content {
-   background: url('http://placehold.it/1920x350') no-repeat center center;
+   background: url('../jpg/test.jpg') no-repeat center center;
    background-size: cover;
    text-align: center;
 }
@@ -149,8 +150,12 @@ p {
   font-family: Oswald;
   text-transform: uppercase;
   font-size: 10;
+
 }
 
+.git-link:hover{
+    color: #BED2D9!important;
+}
 
 .desc {
   border-radius: 4px;
@@ -168,7 +173,7 @@ p {
 }
 
 .pblock{
-    padding-top: 2%;
+
     padding-left: 2%;
     margin-right: 0;
     margin-left: 0;
@@ -191,11 +196,14 @@ p {
 
 }
 
+.mouseover {
+    transition: 1s all;
+}
+
 .mouseover:hover{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  transition: 1s all;
   cursor: pointer;
   color:white;
 }
@@ -206,9 +214,8 @@ p {
   transition: 1s all;
 
 }
-.modal-open {
-    overflow: visible;
-}
-.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
-    padding-right:0px!important;
+
+.contact-box{
+  background: #BED2D9;
+  padding: 5%
 }
