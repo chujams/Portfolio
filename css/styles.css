@@ -16,6 +16,7 @@ html {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         font-family: Lato;
+        background-color: #DDDDDC;
     }
 
     .top-nav-collapse {
@@ -47,7 +48,7 @@ html {
 #sameline:hover{
   color: white;
   letter-spacing: 3px;
-  text-decoration: none;
+  transition: 1s;
 
 }
 
@@ -59,7 +60,7 @@ html {
 }
 
 .about-box {
-  background: #BED2D9;
+  background: #9cc2f4;
   padding: 5%
 }
 
@@ -67,7 +68,7 @@ html {
 
   min-height: 100%;
   padding-top: 5%;
-  background: #BED2D9;
+  background: #9cc2f4;
   /*overflow-y: scroll; */
   padding-bottom: 5%;
 }
@@ -84,7 +85,7 @@ hr {
   clear:both;
   display:block;
   width: 96%;
-  background-color:#BED2D9;
+  background-color:#9cc2f4;
   height: 1.5px;
 }
 
@@ -154,7 +155,7 @@ p {
 }
 
 .git-link:hover{
-    color: #BED2D9!important;
+    color: #9cc2f4!important;
 }
 
 .desc {
@@ -163,7 +164,7 @@ p {
   padding-top: 1%;
 
   max-height: 170px;
-  border-left: 2px #BED2D9 solid;
+  border-left: 2px #9cc2f4 solid;
 
 
 }
@@ -216,7 +217,7 @@ p {
 }
 
 .contact-box{
-  background: #BED2D9;
+  background: #9cc2f4;
   padding: 5%;
 }
 
