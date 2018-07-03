@@ -55,6 +55,10 @@ html {
 
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .about-section {
 
   min-height: 100%;
