@@ -1,7 +1,7 @@
 body {
     width: 100%!important;
     height: 100%;
-    overflow-x: hidden;
+    overflow: scroll;
 }
 
 html {
@@ -40,7 +40,7 @@ html {
 #sameline {
   display: inline;
   text-align:   justify;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 20px;
   color: #a6e6fc;
   transition: 1s;
@@ -175,11 +175,16 @@ p {
   padding-top: 1%;
   padding-bottom: 1%;
 
-  max-height: 170px;
-  border-left: 2px #9cc2f4 solid;
-
-
 }
+
+@media only screen and (min-width: 1200px) {
+  .desc {
+    max-height: 170px;
+    border-left: 2px #9cc2f4 solid;
+  }
+}
+
+
 
 .thumbnail {
   margin-bottom: 0;
@@ -246,7 +251,7 @@ p {
 
 .contact-box{
   background: #9cc2f4;
-  padding: 5%;
+  padding: 3%;
 }
 
 .cont {
