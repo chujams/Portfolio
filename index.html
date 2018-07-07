@@ -16,7 +16,7 @@
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/jquery.js" ></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
   </head>
 
@@ -87,7 +87,23 @@
        <div class="col-md-12">
           <h1> About </h1>
             <p class="about-box">
-            Under construction. Please check back in a bit!
+            Hi there, my name's Jimmy. I'm a recent graduate of University of California, Santa Cruz, with a B.S. in Technology & Information Management.
+            <br> <br>
+            I enjoy designing things and experiences, anything from advertisements to t-shirts, websites to D&D campaigns.
+            <br> <br>
+            My hobbies include unorthodox musical instruments (such as the kalimba or melodica), fitness, writing fiction, badminton, and gaming.
+            <br> <br>
+            I am currently seeking all employment and internship opportunities in fields such as:
+            <br>
+            UX Design, UI Design/Development, Graphic Design, Web Design/Development, Instructional Design, and so on.
+            <br>
+            I'm located in San Jose, California, but I'm open to relocation opportunities.
+            <br>
+            Please check out my resume above, or my project portfolio below. My contact information is available either through my resume,
+            or at the bottom of this page. I'd love to hear from you!
+            </p>
+
+
 
       </div>
      </div>
@@ -102,26 +118,66 @@
         <div class="col-md-12">
           <h1>Portfolio</h1>
             <ul class="nav nav-justified nav-tabs">
-              <li class="active category"><a data-toggle="pill" href="#dev">Development</a></li>
-              <li class="category"><a data-toggle="pill" href="#design">Design</a></li>
+              <li class="active category"><a data-toggle="pill" href="#ux">UX/UI Design</a></li>
+              <li class="category"><a data-toggle="pill" href="#dev">Coding</a></li>
+              <li class="category"><a data-toggle="pill" href="#design">Graphic Design</a></li>
 
               <div class="tab-content">
-              <div id="dev" class="tab-pane fade in active">
+
+                <div id="ux" class="tab-pane fade in active">
+                  <div class="row">
+                    <h1>Showboat</h1>
+                    <p class="desc"> "Showboat" is a concept of an online community for discussing and tracking shows and movies. The website's goal is to make watching
+                      shows and movies (whether through cable, theatres, or a streaming service such as Netflix) a more social experience by encouraging
+                      users to participate in discussion threads on the forums, track which shows their friends are watching, discover new shows via reviews
+                      and recommendations, and keep their current shows organized by tracking which episodes they've watched.
+                      <br> <br>
+                      The site is inspired by show discussion threads on popular content aggregation site "Reddit" and animated series tracking site "MyAnimeList",
+                      combined with a typical internet forum and a dash of social media.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <hr>
+                    <h3> Project Deliverables </h3>
+                    <hr>
+                  </div>
+                  <div class="row dblock">
+
+                    <div class="col-md-4 mouseover">
+                      <a href="https://www.figma.com/file/fuh6n7uPD3e4Aa0QUO1MpR/Showboat-Wireframes" target="_blank"><img class="img-rounded img-responsive" src="jpg/wireframes.jpg"></a>
+                      <p> Wireframes </p>
+                    </div>
+
+                    <div class="col-md-4 mouseover">
+                      <a href="https://www.figma.com/file/FSqpYvNm82rlaeXIp5NW1G/Showboat?node-id=5%3A0" target="_blank"><img class="img-rounded img-responsive" src="jpg/hifi.jpg"></a>
+                      <p> High-Fidelity Prototype </p>
+                    </div>
+
+                    <div class="col-md-4 mouseover">
+                      <a href="showboat/forum.html" target="_blank"><img class="img-rounded img-responsive" src="jpg/forum.jpg"></a>
+                      <p> Forum Page (Desktop ver.) HTML/CSS Mockup </p>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+              <div id="dev" class="tab-pane fade in">
 
                 <div class="row pblock">
                   <div class="col-md-4">
-                    <img src="jpg/netflixer.jpg" class="img-responsive">
+                    <img src="jpg/showboat.jpg" class="img-responsive">
                   </div>
 
 
                   <div class="col-md-8 desc">
                     <h3> Showboat</h3>
                     <a class="git-link" href="showboat/forum.html" target="_blank"> Open in browser </a>
-                    <a class="git-link" href="https://github.com/jimmyhchu/Showboat" target="_blank"> View on github </a>
+                    <!-- <a class="git-link" href="https://github.com/jimmyhchu/Showboat" target="_blank"> View on github </a> -->
 
-                    <p>A Netflix companion site, meant to foster discussion and discovery. Features a forum for discussing and theorizing, a
-                       social media-esque activity feed for friends and community, and a review/recommendation system for discovering new shows.
-                       HTML/CSS, no framework used. Front-end only as of right now.
+                    <p>Mockup of the forum page of "Showboat", an online community for discussing shows and movies.
+                      Built in HTML/CSS as part of a larger UX project for the aforementioned site. (See UX tab)
                     </p>
                   </div>
                 </div>
@@ -137,11 +193,11 @@
                     <h3> Personal Portfolio</h3>
                     <a class="git-link" href="https://github.com/jimmyhchu/jimmyhchu.github.io" target="_blank"> View on github </a>
 
-                    <p>You're currently looking at it! This site was built to showcase my work to potential employers.
-                       I wanted something clean, simple, and easy to navigate, and this is the result.
-                       I am currently still in the process of adding to it and finalizing design choices,
-                       but the core functionality is complete.
-                       Built with the popular framework Bootstrap.
+                    <p>You're currently looking at it! This is one of the first sites I've ever made,
+                       I built it to learn HTML/CSS and to act as a showcase for my work.
+                       The goal was to make something minimalist and easy to navigate, and this is the result.
+                       I've continued to make edits to it and keep it updated with my latest work over the years.
+                       Built in HTML/CSS and using Bootstrap.
                     </p>
                   </div>
                 </div>
@@ -157,10 +213,8 @@
                       <h3> TAG-Maker</h3>
                       <a class="git-link" href="https://github.com/jimmyhchu/TAG-Maker" target="_blank"> View on github </a>
 
-                      <p>TAG-Maker is a program that allows anyone to create simple Text-based Adventure Games.
-                        As long as users follow the simple and intuitive syntax structure that the program is built to understand,
-                        they can quickly and easily build interactive choose-your-own-adventure books.
-                        Each "page" can have a block of description text and up to 10 progression options leading to different pages.
+                      <p>TAG-Maker ("Text-based Adventure Game Maker") is a java program that takes text files of a certain format as input and parses them into playable
+                        (via the command line) text-based games (in the style of "choose your own adventure" books).
                       </p>
                     </div>
                   </div>
@@ -170,7 +224,7 @@
 
 
 
-
+<!--
                   <div class="row pblock">
                     <div class="col-md-4">
                       <img src="jpg/housemate.jpg" class="img-responsive">
@@ -187,8 +241,9 @@
                     </div>
                   </div>
 
-                  <hr>
 
+                  <hr>
+-->
               </div>
 
               <div id="design" class="tab-pane fade">
