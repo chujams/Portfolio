@@ -97,8 +97,14 @@ hr {
   height: 1.5px;
 }
 
-.tab-content {
+
+#ux {
   text-align: center;
+}
+
+#ux .pblock{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .nav-tabs > li > a {
@@ -109,6 +115,9 @@ hr {
 
 }
 
+sup{
+  color: red;
+}
 
 .tab-content{
     padding:5px;
@@ -158,23 +167,19 @@ p {
   font-family: 'Open Sans';
   text-transform: uppercase;
   font-size: 10;
-  margin-left: 10px;
-  margin-right: 10px;
   transition: 0.6s;
-
-
+  font-weight: bold;
 }
 
 .git-link:hover{
-    color: #9cc2f4;
+    color: #699adb;
     text-decoration: none;
 }
 
 .desc {
   border-radius: 4px;
   padding: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.5%;
 
 }
 
@@ -185,7 +190,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 1199px){
+  #dev {
+    text-align: center;
+  }
 
+}
 
 .thumbnail {
   margin-bottom: 0;
@@ -193,11 +203,10 @@ p {
 
 .pblock{
 
-    padding-left: 2%;
     margin-right: 0;
     margin-left: 0;
     margin-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 7%;
 
 }
 

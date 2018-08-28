@@ -61,6 +61,15 @@ body {
   text-shadow: 3px 2px black;
 }
 
+.page-top a{
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.page-top a:hover {
+  color:  #66BFFF;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -144,6 +153,12 @@ h3 {
   display:inline-block;
   vertical-align:top;
   margin-left: 10px;
+}
+
+
+
+.current-page{
+  color: #66BFFF;
 }
 
 .status-body{
