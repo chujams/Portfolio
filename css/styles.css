@@ -15,7 +15,7 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-        font-family: 'Roboto';
+        font-family: 'Open Sans';
         background-color: #DDDDDC;
     }
 
@@ -89,13 +89,21 @@ a:visited {
 }
 
 hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 96%;
-  background-color:#9cc2f4;
-  height: 1.5px;
+  visibility: hidden;
 }
+
+@media (max-width: 992px) {
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:#9cc2f4;
+    height: 1.5px;
+    visibility: visible;
+  }
+}
+
 
 
 #ux {
@@ -174,6 +182,7 @@ p {
 .git-link:hover{
     color: #699adb;
     text-decoration: none;
+    letter-spacing:  2px;
 }
 
 .desc {
