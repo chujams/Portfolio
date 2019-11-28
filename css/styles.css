@@ -82,8 +82,8 @@ a:visited {
 }
 
 .contact-section {
-  height: 100%;
-  min-height: 640px;
+  height: 40%;
+  min-height: 320px;
   padding-top: 5%;
   background: #F7F9FE;
 }
@@ -104,7 +104,9 @@ hr {
   }
 }
 
-
+.about-box span {
+  opacity: 0.3;
+}
 
 #ux {
   text-align: center;
