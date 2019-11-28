@@ -72,6 +72,10 @@ a:visited {
   padding: 5%
 }
 
+.about-box span {
+  opacity: 0.3;
+}
+
 .portfolio-section {
 
   min-height: 100%;
