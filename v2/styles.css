@@ -22,7 +22,7 @@ canvas {
 
 .banner h1 {
     position: absolute;
-    top: 40%;
+    top: 33%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
@@ -35,14 +35,28 @@ canvas {
     letter-spacing: 4px;
 }
 
-.banner h1 p {
+.banner h2 {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 600;
+    margin: auto;
+    letter-spacing: 4px;
+}
+
+.banner h2 p {
     font-size: 2.5rem;
     display: inline-block;
     font-family: 'Roboto';
     font-weight: normal;
     letter-spacing: normal;
     margin: 0;
-    margin-left: 62px;
+    margin-left: 120px;
 }
 
 #extLinks {
@@ -372,7 +386,7 @@ canvas {
   max-width: 138px;
   opacity: 0;
   bottom: 8.5px;
-  right: 51.2%;
+  right: 47.8%;
   text-align: right;
 }
 
