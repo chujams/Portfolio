@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    padding: 10px;
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
+.header {
+  background-color: #EEEEEE;
+  padding-top: 10px;
+  padding-left: 6%;
+  padding-right: 7%;
+}
+
+.header a {
+  color: #FDC10E;
+  font-size: 2.75vw;
+
+}
+
+.header a:hover {
+  text-decoration: overline;
+}
+
+.header p {
+  float: right;
+  font-size: 1.5vw;
+  padding-top: 17.5px;
+}
+
+.header p:hover {
+  text-decoration: overline;
+}
+
+#logo {
+  width: 13vw;
+}
+
+.distribute {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navbar {
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #084587;
+}
+
+.navbar a{
+  color: white;
+  transition: 0.6s;
+  border-bottom-style: solid;
+  border-color: transparent;
+  text-transform: uppercase;
+
+}
+
+sup {
+  font-size: 10px;
+}
+
+.navbar a:hover{
+  color: #FDC10E;
+  border-color: #FDC10E;
+}
+
+.divider{
+  background: #FDC10E;
+  height: 3px;
+}
+
+.banner {
+  background: url(jpg/growth-text.jpg) no-repeat bottom;
+  height: 60vh;
+  background-size: cover;
+}
+
+.info-blocks {
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 18pt;
+}
+
+.info-blocks a{
+  color: white;
+}
+
+#block1 {
+  background: #084587;
+  min-height: 21vh;
+  padding-top: 25px;
+  font-size: 14pt;
+  transition: 0.8s;
+}
+
+#block1:hover{
+  background: #eeeeee;
+  color: #084587;
+}
+
+#block2 {
+  background: #007988;
+  min-height: 21vh;
+  padding-top: 25px;
+  transition: 0.8s;
+}
+
+#block2:hover{
+  background: #eeeeee;
+  color: #084587;
+}
+
+#block3 {
+  background: #FDC10E;
+  min-height: 21vh;
+  padding-top: 25px;
+  transition: 0.8s;
+}
+
+#block3:hover{
+  background: #eeeeee;
+  color: #084587;
+}
+
+h1{
+  font-size: 32pt;
+  padding-top: 3%;
+}
+
+.link-more {
+  transition: 0.5s;
+}
+
+.link-more:hover {
+  letter-spacing: 2px;
+}
+
+.news {
+  padding-left: 8%;
+  background: #eeeeee;
+}
+
+.news a {
+  color: #FDC10E;
+  font-weight: bold;
+}
+
+.news h1 {
+  color: #084587;
+}
+
+#bottom {
+  padding-bottom: 5%;
+}
+
+footer {
+  background: #084587;
+  color: white;
+  padding: 35px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+footer a{
+  color: #FDC10E;
+}

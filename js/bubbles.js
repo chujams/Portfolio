@@ -40,7 +40,7 @@ updateCircles.prototype.randomize = function() {
 
     let circle = this;
 
-    circle.colors = ["255,198,81", "38,141,247", "66,52,248", "255,108,80", "243, 244, 255", "96, 100, 131"],
+    circle.colors = ["85,107,139", "38,141,247", "66,52,248", "255,108,80", "243, 244, 255", "96, 100, 131"],
     circle.velocity = 30,
     circle.smoothing = 50,
     circle.staticity = 30,
@@ -115,7 +115,7 @@ renderCircles.prototype.addBubble = function(circle) {
 
 renderCircles.prototype.generateBubbles = function() {
     let circle = this;
-    let amount = 35; // total circles allowed on screen
+    let amount = 15; // total circles allowed on screen
     for (let i = 0; i < amount; i++) {
         circle.addBubble(new updateCircles(circle.canvas.parentNode))
     }
