@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #dcf2f0;
-  font-family: 'Source Sans Pro', sans-serif;
+  background: #22313F;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 canvas {
@@ -11,46 +16,57 @@ canvas {
 
 .banner {
     position: relative;
-    height: 45vh;
+    height: 60vh;
+    background: #0c0f1a;
 }
 
 .banner h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
     font-family: 'Oxygen', sans-serif;
-    font-size: 4rem;
+    font-size: 5em;
     font-weight: 600;
     margin: auto;
+    letter-spacing: 4px;
 }
 
-#links {
-  position: absolute;
-  right: 20px;
-  top: 21vh;
+.banner h1 p {
+    font-size: 2.5rem;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0;
+    margin-left: 62px;
 }
 
-#links a, #links a:visited {
-  font-size: 2em;
+#extLinks {
+  float: right;
+}
+
+#extLinks a, #extLinks a:visited {
+  font-size: 1.3em;
   transition: 0.3s;
-  color: #3836b8;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   text-align: right;
-  line-height: 1.7em;
+  line-height: 1.46em;
 }
 
-#links a:hover {
-  letter-spacing: 0.1em;
-  color: #00adff;
+#extLinks a:hover {
+  letter-spacing: 1px;
+  color: #60ccff;
+  background-color: #0c0f1a;
 }
 
 .banner::before {
-  content: "";
+  /*content: "";*/
   height: 700px;
   width: 700px;
   background-color: #ffffff;
@@ -61,56 +77,154 @@ canvas {
   top: 9vh;
 }
 
-.portfolio {
-  position: relative;
-  top: -35px;
+#featured {
+  /*background-image: linear-gradient(176deg, #59abff 70%, #F4F4F4 calc(70% + 2px));
+  padding-bottom: 300px;*/
+  background: #59abff;
+  max-height: 419px;
+  background: linear-gradient(to bottom,#017af8 0%,#0065cd 100%);
 }
 
-#featured {
+#panels {
   padding: 0;
-  display: inline-block;
+  display: block;
   width: auto;
   text-align: center;
-  margin: 0 2%;
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
 }
 
-#featured a {
+#featured #panels {
+  top: -200px;
+}
+
+#panels a {
   text-decoration: none;
   position: relative;
   text-align: center;
 }
 
-#featured img:hover {
+#panels a:hover img {
   transform: scale(1.05);
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
-#featured img {
-  width: 90%;
+#panels img {
   display: inline-block;
-  border-radius: 10px;
   transition: 0.3s;
   margin-bottom: 2%;
 }
 
-#featured a h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*
+#featured #panels a:nth-child(even) img {
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
+#featured #panels a:nth-child(odd) img {
+  -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
+  clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
+}
+*/
+
+#panels a h2 {
+    position: absolute;
+    top: -8.5vw;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    transition: 0.3s;
+    color: #ffffff;
+    font-size: 2.3em;
+    line-height: 1.1em;
+    text-shadow: 2px 2px 8px #000000;
+/*    transform: translateY(30px);
+    -webkit-transform: translateY(30px)*/
+}
+
+#panels a h2 span {
+    font-size: 0.5em;
+}
+
+#featured #panels a h2 {
+    top: -315px;
+}
+
+#panels a:hover h2 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  /*transform: translateY(0px);
+  -webkit-transform: translateY(0px);*/
+}
+
+.blurb {
+  text-align: left;
+  font-family: Oxygen;
+  width: 85%;
+  margin: auto;
+  font-size: 1.3em;
+  color: #1c1c1c;
+  padding-top: 70px;
+}
+
+#code .blurb {
+  color: #ffffff;
+}
+
+.blurb h2 {
+  margin: 0 0 10px;
+}
+
+.blurb p {
+  font-family: 'Roboto';
+  line-height: 1.4em;
+}
+
+#code {
+  /*background: #F4F4F4;
+  height: 600px;*/
+  background-image: linear-gradient(184deg, #0079f6 70%, #0c0f1a calc(70% + 2px));
+  padding-bottom: 350px;
+}
+
+#web {
+  /*background-image: linear-gradient(176deg, #59abff 70%, #F4F4F4 calc(70% + 2px));*/
+  padding-bottom: 100px;
+  background-color: #f5f5f5;
+}
+
+#misc {
+  background: #0c0f1a;
+}
+
+#web #panels,  #code #panels, #misc #panels {
+  max-width: 89%;
+}
+
+#web #panels img, #code #panels img, #misc #panels img {
+  width: 31%;
+  object-fit: cover;
+  margin: 5px;
+}
+
+#misc .blurb {
+  color: #fff;
+}
+
+
 @media screen and (max-width: 850px) {
-  #links a, #links a:visited {
-    display: inline-block;
-    margin: 0 20px;
+  #extLinks a, #extLinks a:visited {
+
   }
 
-  #links {
-    text-align: center;
-    position: relative;
-    top: -150px;
-    background: #fff;
-    right: 0px;
+  .topNav a.icon {
+    display: none;
+  }
+
+  #extLinks {
+
   }
 
   .banner::before {
@@ -118,16 +232,184 @@ canvas {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  #featured img {
-    width: 45%;
-  }
+#featured #panels img {
+  width: 22.10%;
+  height: 550px;
+  object-fit: cover;
+}
 
-  #featured a:first-child img {
-    margin-right: 0.7%;
-  }
+#featured #panels a:first-child img {
+  margin-right: 0.7%;
+}
 
-  #featured a:last-child img {
-    margin-left: 0.7%;
+#featured #panels a:last-child img {
+  margin-left: 0.7%;
+}
+
+#featured #panels a:nth-child(2) img {
+  margin-right: 0.35%;
+}
+
+#featured #panels a:nth-child(3) img {
+  margin-left: 0.35%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        font-family: 'Open Sans';
+        background-color: #DDDDDC;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.topNav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.topNav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.topNav a:hover {
+  background-color: #0c0f1a;
+}
+
+.topNav a.active {
+  background-color: #0c0f1a;
+  color: #73f2ff;
+  margin-right: 10px;
+}
+
+.topNav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topNav a:not(:first-child) {display: none;}
+  .topNav a.icon {
+    float: right;
+    display: block;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .topNav.responsive {position: relative;}
+  .topNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*** background object/accents ***/
+#featured::before {
+  content: "Featured";
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 5.5em;
+  position: absolute;
+  top: 621px;
+  left: -23px;
+  color: #ffffff61;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+#featured #panels::before {
+  content: "";
+  height: 620px;
+  width: 250px;
+  background-color: #fea;
+  border-radius: 0;
+  display: inline-block;
+  position: absolute;
+  right: -575px;
+  bottom: -145px;
+}
+
+#web::after {
+  content: "";
+  height: 130px;
+  width: 100%;
+  background-image: linear-gradient(176deg, #f5f5f5 50%, #0079f6 calc(50% + 2px));
+  bottom: 0px;
+  z-index: 0;
+  display: block;
+  margin-top: 0px;
+  position: relative;
+  top: 100px;
+}
+
+/*** Banner text rotater CSS ***/
+
+.word {
+  position: absolute;
+  width: auto;
+  max-width: 138px;
+  opacity: 0;
+  bottom: 8.5px;
+  right: 51.2%;
+  text-align: right;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.yellow {
+  color: #FFC651;
+}
+
+.blue {
+  color: #268DF7;
+}
+
+.orange {
+  color: #ff6c50;
+}
+
+.purple {
+  color: #606483;
 }

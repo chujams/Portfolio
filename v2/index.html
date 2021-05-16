@@ -5,36 +5,152 @@
 <meta charset="UTF-8">
 <title>Bloop</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Oxygen|Source+Sans+Pro&display=swap" rel="stylesheet">
-<script src="bubbles.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="js/bubbles.js"></script>
 </head>
 
 <body>
-  <section class="banner">
+
+  <div class="topNav" id="navbar">
+    <a href="#top" class="active">&#9650;</a>
+    <a href="#web">Web</a>
+    <a href="#code">Code</a>
+    <a href="#misc">Misc</a>
+
+    <div id="extLinks">
+      <a href="#" id="resume"> Resume </a>
+      <a href="#" id="github"> GitHub </a>
+      <a href="#" id="linkedin"> LinkedIn </a>
+    </div>
+  </div>
+
+  <section class="banner" id="top">
     <canvas id="canvas"></canvas>
-    <h1>Jimmy Chu</h1>
-    <div id="links">
-      <a href="#" id="link1"> Resume </a>
-      <a href="#" id="link2"> GitHub </a>
-      <a href="#" id="link3"> LinkedIn </a>
+    <h1>
+      Jimmy Chu
+      <br>
+      <p>
+        <span class="word blue">Web</span>
+        <span class="word yellow">Graphic</span>
+        <span class="word orange">UI</span>
+        <span class="word purple">Print</span>
+      </p>
+      <p>Designer</p>
+    </h1>
+
+  </section>
+
+  <section id="featured">
+    <div id="panels">
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> PPGC 2020 Brochure </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="jpg/feat-showboat.jpg" alt="Showboat"/>
+        <h2> Showboat <span> (Figma Mockup) </span></h2>
+      </a>
     </div>
   </section>
 
-  <section class="portfolio">
-    <div id="featured">
-
+  <section class="portfolio" id="web">
+    <div class="blurb">
+      <h2> Web Design for the Modern Era </h2>
+      <p>"Well, I don't know why not," said the inspector. "He doesn't look a credit to the Bow Street cells, does he?" He slipped his key into the lock, and we all very quietly entered the cell. The sleeper half turned, and then settled down once more into a deep slumber. Holmes stooped to the water-jug, moistened his sponge, and then rubbed it twice vigorously across and down the prisoner's face.</p>
+    </div>
+    <div id="panels">
       <a href="#">
         <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
-        <h2> test </h2>
+        <h2> Placeholder Text </h2>
       </a>
-
       <a href="#">
         <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
       </a>
     </div>
+  </section>
 
+  <section class="portfolio" id="code">
+    <div class="blurb">
+      <h2> Placeholder Title Pertaining to Code </h2>
+      <p>From outside came the occasional cry of a night-bird, and once at our very window a long drawn catlike whine, which told us that the cheetah was indeed at liberty. Far away we could hear the deep tones of the parish clock, which boomed out every quarter of an hour. How long they seemed, those quarters! Twelve struck, and one and two and three, and still we sat waiting silently for whatever might befall.</p>
+    </div>
+    <div id="panels">
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+    </div>
+  </section>
+
+  <section class="portfolio" id="misc">
+    <div class="blurb">
+      <h2> Placeholder Title Pertaining to Graphics </h2>
+      <p>From outside came the occasional cry of a night-bird, and once at our very window a long drawn catlike whine, which told us that the cheetah was indeed at liberty. Far away we could hear the deep tones of the parish clock, which boomed out every quarter of an hour. How long they seemed, those quarters! Twelve struck, and one and two and three, and still we sat waiting silently for whatever might befall.</p>
+    </div>
+    <div id="panels">
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/cat" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+      <a href="#">
+        <img src="https://loremflickr.com/1000/600/dog" alt="placeholder"/>
+        <h2> Placeholder Text </h2>
+      </a>
+    </div>
   </section>
 
 </body>
 
 </html>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNav";
+  }
+}
+
+</script>
+
+<script src="js/text-rotate.js"></script>
