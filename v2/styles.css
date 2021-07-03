@@ -420,7 +420,50 @@ canvas {
   .panels a:hover h2 {
     transform: translate(-50%, -125%)
   }
+
+  .codeRow {
+    margin-top: 200px;
+  }
+
+  .codeRow::after {
+    top: -135px;
+    border-right: none;
+    border-bottom: 8px solid #60ccff;
+    width: 100%;
+    height: 220px;
+  }
+
+  .codeRow h2 {
+    width: 90%;
+    margin-left: 16px;
+    margin-top: 50px;
+    margin-bottom: 7px;
+  }
+
+  .codeRow p {
+    width: 90%;
+    margin: auto;
+    padding: 7px 0 7px;
+  }
+
+  .codeRow a {
+    margin: auto;
+    width: 90%;
+  }
+
+  .codeRow h2::before {
+    border-top: 14px solid #2f2f2f;
+    border-right: 12px solid transparent;
+    top: 72px;
+  }
+
+  .codeRow p {
+    margin: auto;
+    padding: 7px 0;
+  }
+
 }
+
 
 /* Fix text bug for hover panels at certain sizes*/
 
