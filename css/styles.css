@@ -215,6 +215,7 @@ canvas {
 
 #misc .blurb p {
   opacity: 0.4;
+  padding-top: 40px;
 }
 
 /*Hacky fix for Firefox transform being broken */
@@ -383,6 +384,7 @@ canvas {
 
 #misc {
   background: #0c0f1a;
+  padding-bottom: 60px;
 }
 
 #web .panels,  #code .panels, #misc .panels {
@@ -484,6 +486,8 @@ canvas {
   }
 
 }
+
+
 
 @media screen and (max-width: 405px) {
   #extLinks a:nth-child(2), #extLinks a:nth-child(3) {
@@ -655,7 +659,7 @@ canvas {
   text-orientation: mixed;
 }
 
-#featured .panels::before {
+/**#featured .panels::before {
   content: "";
   height: 620px;
   width: 250px;
@@ -665,7 +669,7 @@ canvas {
   position: absolute;
   right: -575px;
   bottom: -145px;
-}
+}**/
 
 #code::after {
   content: "";
