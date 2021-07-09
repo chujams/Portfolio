@@ -493,6 +493,8 @@ canvas {
   #extLinks a:nth-child(2), #extLinks a:nth-child(3) {
     display: none;
   }
+
+
 }
 
 /* Fix text bug for hover panels at certain sizes*/
@@ -771,8 +773,34 @@ canvas {
     bottom: 13px;
   }
 
+  #webHolder {
+    width: 97%;
+    border-width: 5px;
+  }
+
+  .disclaimer {
+    display: none;
+  }
+
+  #web {
+    margin-bottom: -100px;
+  }
+
+  #TAGMaker {
+    margin-top: 165px;
+  }
+
+  .codeRow p {
+    font-size: 1.3em;
+  }
+
   .banner h1 {
     font-size: 3em;
+    top: 37%;
+  }
+
+  #misc .blurb p {
+    padding-top: 0;
   }
 
   .banner h2 p {
@@ -781,6 +809,18 @@ canvas {
   }
 
   .banner h2 {
-    top: 39%;
+    top: 47%;
+  }
+
+  #featured {
+    max-height: 625px;i
+  }
+
+  #featured .panels {
+    top: -115px;
+  }
+
+  #featured::before {
+    display: none;
   }
 }
