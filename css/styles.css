@@ -215,7 +215,6 @@ canvas {
 
 #misc .blurb p {
   opacity: 0.4;
-  padding-top: 40px;
 }
 
 /*Hacky fix for Firefox transform being broken */
@@ -769,7 +768,7 @@ canvas {
 
 @media screen and (max-width: 520px) {
   .word {
-    right: 47%;
+    right: 50%;
     bottom: 13px;
   }
 
@@ -795,7 +794,7 @@ canvas {
   }
 
   .banner h1 {
-    font-size: 3em;
+    font-size: 2.7em;
     top: 37%;
   }
 
@@ -804,7 +803,7 @@ canvas {
   }
 
   .banner h2 p {
-    margin-left: 63px;
+    margin-left: 54px;
     font-size: 1.7rem;
   }
 
@@ -813,7 +812,7 @@ canvas {
   }
 
   #featured {
-    max-height: 625px;i
+    max-height: 625px;
   }
 
   #featured .panels {
