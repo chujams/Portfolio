@@ -70,6 +70,7 @@ canvas {
     margin: auto;
     letter-spacing: 4px;
     transition: 0.5s;
+    font-style: italic;
 }
 
 .banner h2 {
@@ -91,7 +92,6 @@ canvas {
     display: inline-block;
     font-family: 'Roboto';
     font-weight: bold;
-    font-style: italic;
     letter-spacing: normal;
     margin: 0;
     margin-left: 120px;
