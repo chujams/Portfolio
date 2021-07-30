@@ -658,6 +658,7 @@ canvas {
   color: #ffffff61;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  display: none;
 }
 
 /**#featured .panels::before {
